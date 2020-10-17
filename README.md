@@ -1,0 +1,1 @@
+# discord-notification-settings-handler
