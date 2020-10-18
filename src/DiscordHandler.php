@@ -5,6 +5,7 @@ namespace pschocke\DiscordNotificationSettings;
 use pschocke\NotificationSettings\Handler\Handler;
 use pschocke\NotificationSettings\Handler\HandlerInterface;
 use pschocke\NotificationSettings\Models\NotificationSetting;
+use SnoerenDevelopment\DiscordWebhook\DiscordWebhookChannel;
 
 class DiscordHandler extends Handler implements HandlerInterface
 {
@@ -13,7 +14,7 @@ class DiscordHandler extends Handler implements HandlerInterface
         'webhook' => ['required', 'url'],
     ];
 
-    const via = 'discord';
+    const via = DiscordWebhookChannel::class;
 
     protected $notificationChannel = 'discord';
 
