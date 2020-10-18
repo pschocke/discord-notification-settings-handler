@@ -19,7 +19,8 @@
     "require": {
       "php": "^7.4",
       "illuminate/support": "~6|~7|~8",
-      "pschocke/laravel-notification-settings": "*"
+      "pschocke/laravel-notification-settings": "*",
+      "snoeren-development/laravel-discord-webhook-channel": "*"
     },
     "require-dev": {
       "friendsofphp/php-cs-fixer": "^2.16",
